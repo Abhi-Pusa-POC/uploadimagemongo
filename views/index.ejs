@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <form id="uploadForm" enctype="multipart/form-data" action="/api/photo" method="post">
+    <input type="file" name="userPhoto" />
+    <input type="submit" value="Upload Image" name="submit">
+    </form>
+    <div>
+      <button type="button" onclick="getImage()">BUTTON</button>
+      <div id="myimg"/ style="height:200px;width:200px"></div>
+    </div>
+  </body>
+  <script type="text/javascript" src="/javascripts/getImagefile.js"></script>
+</html>
